@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyprctl-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyprctl-{{ version }}.tar.gz
   sha256: 1fb54d3ab030ec02e4afc38fb9662d6634c12834e91ae7959de56a9c09f69c26
 
 build:
   skip: True  # [not linux]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 5
 
 requirements:
   host:
